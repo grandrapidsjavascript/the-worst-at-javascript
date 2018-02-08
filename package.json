@@ -1,0 +1,23 @@
+{
+  "name": "the-worst-at-javascript",
+  "version": "1.0.0",
+  "description": "Terrible JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandrapidsjavascript/the-worst-at-javascript.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Fun"
+  ],
+  "author": "Grand Rapids JavaScript Group",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grandrapidsjavascript/the-worst-at-javascript/issues"
+  },
+  "homepage": "https://github.com/grandrapidsjavascript/the-worst-at-javascript#readme"
+}

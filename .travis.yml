@@ -1,0 +1,9 @@
+language: node_js
+before_script:
+  - echo "Let's get started testing these!"
+script:
+  - npm test
+after_script:
+  - echo "All the tests are done is done!"
+node_js:
+  - "8.9.1"
