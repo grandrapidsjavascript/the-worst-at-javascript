@@ -1,6 +1,20 @@
 // Add a function to this that adds two numbers
 module.exports = {
-  addTwoNumbers: function(number1, number2){
-    return number1 + number2;
-  }
+  kendellsAddNumberFunction: function(firstNumber, secondNumber){
+    return secondNumber + firstNumber;
+  },
+  
+  zachmultiplyTwoNumbersandsubtractnumberTwo: function (firstNumber, secondNumber,numberTwo) {
+    return (firstNumber * secondNumber) - (firstNumber * secondNumber) + firstNumber + secondNumber
+    //return firstNumber*secondNumber-numberTwo;
+  },
+
+  mattsDestroyNumbersFunction: function(poorUnfortunateNumber, numberZero){
+    return poorUnfortunateNumber * numberZero;
+  },  
+
+  frankSubtractTwoNumbers: function(numberOne, numberTwo){
+    return numberOne - numberTwo;
+  },
+  
 };
