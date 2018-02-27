@@ -1,7 +1,7 @@
 Feature: These are functions that add two numbers
   
   Scenario: We should have the correct resources for adding two numbers
-    Given there is 4 function that can add two numbers
+    Given there is 5 function that can add two numbers
     
   Scenario: A person wants to add two numbers together using Kendell's Function
     Given we have a function that can add two numbers called kendellsAddNumberFunction
@@ -30,3 +30,10 @@ Feature: These are functions that add two numbers
       And we want to use 0 as the second number
     When we add our numbers using the frankSubtractTwoNumbers function
     Then the result should equal 0
+
+  Scenario: A person wants to add two numbers together using Sam's Function
+    Given we have a function that can add two numbers called samsAddTwoNumbers
+      And we want to use 21 as the first number
+      And we want to use 125 as the second number
+    When we add our numbers using the samsAddTwoNumbers function
+    Then the result should equal 146
