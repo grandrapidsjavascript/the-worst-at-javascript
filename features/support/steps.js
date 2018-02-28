@@ -2,7 +2,7 @@ const { Given, When, Then } = require(`cucumber`);
 const { expect } = require(`chai`);
 
 const ourFunctions = require(`${process.cwd()}/adds_functions`);
-let world = {};
+let world = { params: {}};
 
 Given(/there is (.*) function that can add two numbers/, (count, done) => {
   count = parseInt(count);
@@ -17,15 +17,17 @@ Given(/we have a function that can add two numbers called (.*)/, (functionName, 
 });
 
 Given(/we want to use (.*) as the (.*) number/, (number, place, done) => {
-  world[place] = parseInt(number, 10);
+  world.params[place] = parseInt(number, 10);
   done();
 });
 
 When(/we add our numbers using the (.*) function/, (functionName, done) => {
-  expect(world.first).to.be.a(`number`);
-  expect(world.second).to.be.a(`number`);
+  const list = Object.values(world.params);
+  list.forEach( place => {
+    expect(place).to.be.a(`number`);
+  });
   expect(ourFunctions[functionName]).to.be.a(`function`);
-  world.result = ourFunctions[functionName](world.first, world.second);
+  world.result = (ourFunctions[functionName]).apply(null, list);
   done();
 });
 
