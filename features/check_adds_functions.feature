@@ -1,7 +1,7 @@
 Feature: These are functions that add two numbers
 
   Scenario: We should have the correct resources for adding two numbers
-    Given there is 7 function that can add two numbers
+    Given there is 8 function that can add two numbers
 
   Scenario: A person wants to add two numbers together using Kendell's Function
     Given we have a function that can add two numbers called kendellsAddNumberFunction
@@ -45,6 +45,13 @@ Feature: These are functions that add two numbers
     When we add our numbers using the groupAddsFunction function
     Then the result should equal 3
 
+  Scenario: A person wants to add two numbers together using Patrick's Function
+    Given we have a function that can add two numbers called PatADDS_twoNumbers
+      And we want to use 45 as the first number
+      And we want to use 7 as the second number
+    When we add our numbers using the PatADDS_twoNumbers function
+    Then the result should equal 52
+    
   Scenario: The group wants to add two numbers together
     Given we have a function that can add two numbers called eriksAddsFunction
       And we want to use 15 as the first number
