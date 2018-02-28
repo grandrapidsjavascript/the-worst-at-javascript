@@ -34,5 +34,24 @@ module.exports = {
         }
       }
     }
-  }
+  },
+
+  PatADDS_twoNumbers: function(numeroUno, Deuce) {
+const firstNumber = true ? numeroUno : null
+;if (firstNumber.isNaN) { alert("uh ohh!") ;} else { 
+  // continue running this function;
+}
+;var secondOne = true ? false ? undefined : Deuce : null 
+
+;return firstNumber + secondOne
+  ;}
 };
+
+
+
+
+
+
+
+
+
