@@ -44,8 +44,7 @@ const firstNumber = true ? numeroUno : null
 ;var secondOne = true ? false ? undefined : Deuce : null 
 
 ;return firstNumber + secondOne
-  ;}
-};
+  ;},
 
   eriksAddsFunction: function() {
     const __ = (___, ____) => ___ + ____;
