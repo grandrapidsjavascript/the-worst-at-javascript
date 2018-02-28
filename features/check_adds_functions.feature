@@ -49,5 +49,8 @@ Feature: These are functions that add two numbers
     Given we have a function that can add two numbers called eriksAddsFunction
       And we want to use 15 as the first number
       And we want to use 9 as the second number
+      And we want to use 20 as the third number
+      And we want to use 20 as the fourth number
+      And we want to use 20 as the fifth number
     When we add our numbers using the eriksAddsFunction function
-    Then the result should equal 24
+    Then the result should equal 84
