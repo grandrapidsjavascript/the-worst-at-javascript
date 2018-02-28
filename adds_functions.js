@@ -3,7 +3,7 @@ module.exports = {
   kendellsAddNumberFunction: function(firstNumber, secondNumber){
     return secondNumber + firstNumber;
   },
-  
+
   zachmultiplyTwoNumbersandsubtractnumberTwo: function (firstNumber, secondNumber,numberTwo) {
     return (firstNumber * secondNumber) - (firstNumber * secondNumber) + firstNumber + secondNumber
     //return firstNumber*secondNumber-numberTwo;
@@ -11,19 +11,19 @@ module.exports = {
 
   mattsDestroyNumbersFunction: function(poorUnfortunateNumber, numberZero){
     return poorUnfortunateNumber * numberZero;
-  },  
+  },
 
   frankSubtractTwoNumbers: function(numberOne, numberTwo){
     return numberOne - numberTwo;
   },
 
-  samsAddTwoNumbers: new Function('e', 't', 
+  samsAddTwoNumbers: new Function('e', 't',
     (!![]+[])[+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+([][[]]+[])[+[]]+(!![]+[])[+!+[]]+
     ([][[]]+[])[+!+[]]+(+[![]]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+
     (!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+!+[]]]+(!![]+[])[!+[]+!+
     []+!+[]]+(+(+!+[]+(!+[]+[])[!+[]+!+[]+!+[]]+[+!+[]]+[+[]]+[+[]])+[])[!+[]+!+[]]+(!![]+[])[+
       []]),
-  
+
   groupAddsFunction: function(I, h){
     {
       {
@@ -34,5 +34,10 @@ module.exports = {
         }
       }
     }
+  },
+  eriksAddsFunction: function() {
+    const __ = (___, ____) => ___ + ____;
+    return Array.prototype.slice.call(arguments).reduce(__);
   }
+
 };
